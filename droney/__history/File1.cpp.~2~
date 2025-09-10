@@ -1,0 +1,17 @@
+#include <iostream>
+#include <tchar.h>
+#include "IRClientUDP.h"
+using namespace std;
+int main ()
+{
+cout << "Droney's taking off" << endl;
+IRClientUDP clientTello;
+clientTello.OuvrirLaSocketDeCommunication("192.168.10.1", 8889);
+clientTello.EnvoyerUnMessage("command");
+ cout << "commanding" << endl;
+clientTello.EnvoyerUnMessage("takeoff");
+ cout << "Droney's taking off" << endl;
+cin.get();
+return 0;
+
+}

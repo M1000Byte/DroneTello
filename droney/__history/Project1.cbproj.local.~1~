@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/09/03 13:55:18.000.961,=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2025/09/03 13:55:18.000.644,=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2025/09/03 13:56:00.000.685,C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\File1.cpp=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2025/09/03 13:56:00.000.651,C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\Project1PCH1.h=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2025/09/03 13:56:00.000.702,C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\Project1.cbproj=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+    <Transaction>2025/09/03 13:56:03.000.487,C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\Project1.cbproj=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\Project1.cbproj</Transaction>
+    <Transaction>2025/09/03 14:29:37.000.105,=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\IRClientUDP.cpp</Transaction>
+    <Transaction>2025/09/04 10:55:07.000.593,=C:\Users\WASONMWMRIRI\Documents\Embarcadero\Studio\Projets\droney\TelloClientUDP.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

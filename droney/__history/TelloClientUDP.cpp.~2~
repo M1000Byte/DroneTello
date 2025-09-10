@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TelloClientUDP.h"
+#include "IRClientUDP.h"
+//---------------------------------------------------------------------------
+TelloClientUDP::TelloClientUDP(){
+  client.OuvrirLaSocketDeCommunication("192.168.10.1",8889);
+}
+string TelloClientUDP::EnvoyerCommande (string commande){
+client.EnvoyerUnMessage(commande);
+string message;
+int n= client.RecevoirUnMessage;
+if (n>0) return message; {}
+ }string TelloClientUDP::ModeCommande()

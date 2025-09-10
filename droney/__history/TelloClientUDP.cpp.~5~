@@ -1,0 +1,79 @@
+#pragma hdrstop
+#include "IRClientUDP.h"
+#include "TelloClientUDP.h"
+#include <iostream>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+TelloClientUDP::TelloClientUDP()
+{
+client.OuvrirLaSocketDeCommunication("127.0.0.1",8889);
+}
+
+string TelloClientUDP::EnvoyerCommande(string commande)
+{
+std::cout << "CMD : " << commande << std::endl;
+client.EnvoyerUnMessage(commande);
+string message;
+int n=client.RecevoirUnMessage(message);
+std::cout << "RCV : " << n << " - " << message << std::endl;
+
+if (n>0) return message;
+}
+
+string TelloClientUDP::ModeComande()
+{
+    string message;
+    message=EnvoyerCommande("commmand");
+    return message;
+}
+
+string TelloClientUDP::Decoller()
+{
+  string message;
+    message=EnvoyerCommande("takeoff");
+    return message;
+}
+
+string TelloClientUDP::Aterrir()
+{
+    string message;
+    message=EnvoyerCommande("land");
+    return message;
+}
+string TelloClientUDP::Monter()
+{
+    string message;
+    message=EnvoyerCommande("up ");
+    return message;
+}
+string TelloClientUDP::Descendre()
+{
+    string message;
+    message=EnvoyerCommande("down 100");
+    return message;
+}
+string TelloClientUDP::Gauche()
+{
+    string message;
+    message=EnvoyerCommande("left 100");
+    return message;
+}
+string TelloClientUDP::Droite()
+{
+    string message;
+    message=EnvoyerCommande("right 100");
+    return message;
+}
+string TelloClientUDP::Avant()
+{
+    string message;
+    message=EnvoyerCommande("forward 100");
+    return message;
+}
+string TelloClientUDP::Arriere()
+{
+    string message;
+    message=EnvoyerCommande("back 100");
+    return message;
+}
